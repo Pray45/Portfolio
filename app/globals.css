@@ -21,6 +21,24 @@
 
 body {
   background: var(--background);
+  overflow-x: hidden;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.dot_pattern{
+  background-color: rgb(12, 12, 12);
+  background-image: 
+  radial-gradient(#181818 1px, transparent 1px),
+  radial-gradient(#f8f8f8 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+.lines_pattern{
+    background: repeating-linear-gradient(
+    135deg,
+    #0c0c0c,
+    #131313 1px,
+    #000000 8px
+  );
 }
