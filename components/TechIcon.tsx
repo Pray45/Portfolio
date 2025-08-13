@@ -1,4 +1,10 @@
-export default function TechIcon({ src, label, alt }) {
+interface TechIconProps {
+  src: string;
+  label: string;
+  alt?: string;
+}
+
+export default function TechIcon({ src, label, alt }: TechIconProps) {
   return (
     <div className="relative group">
       <img
