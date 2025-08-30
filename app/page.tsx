@@ -130,7 +130,7 @@ export default function Home() {
           </p>
           <p>
             I&apos;m currently pursuing my <span className="font-medium">B.Tech in CSE</span> at <span className="font-medium">GEC Patan</span> (2nd year).  
-            I am Campus Orgeniser of <span className="text-[#00FF88]">GDGoC</span> at Gec patan. Actively attending and organizing tech events/workshops on campus, I&apos;m highly motivated to engage in and contribute to tech communities.
+            I am Campus Organizer of <span className="text-[#00FF88]">GDGoC</span> at Gec patan. Actively attending and organizing tech events/workshops on campus, I&apos;m highly motivated to engage in and contribute to tech communities.
           </p>
         </div>
       </div>
