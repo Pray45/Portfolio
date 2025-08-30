@@ -83,14 +83,14 @@ export default function Home() {
     <div className="flex flex-col w-full overflow-x-hidden">
       {/* Dot pattern header */}
       <div className="w-full border-t border-b border-[#1b1b1e] flex justify-center">
-        <div className="dot_pattern flex-col w-full px-5 sm:px-0 sm:w-2/5 sm:border-l sm:border-r border-[#1b1b1e] h-35 sm:h-50 flex justify-center">
+        <div className="dot_pattern flex-col w-full px-5  sm:w-200 sm:border-l sm:border-r border-[#1b1b1e] h-35 sm:h-50 flex justify-center">
           <h1 className="p-2 sm:p-5 text-xs sm:text-lg">Pray@arch: ~$ Sudo rm -rf /*</h1>
           <h1 className="p-2 sm:pl-5 text-xs sm:text-lg">Pray@arch: ~$ echo &quot;Just trying to do better than yesterday.&quot;</h1>
         </div>
       </div>
 
       {/* Profile Section */}
-      <section className="flex relative w-full sm:w-2/5 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
+      <section className="flex relative w-full sm:w-200 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
         <div className="lines_pattern hidden sm:flex absolute inset-0 opacity-50"></div>
         <div className="flex px-5 relative z-10 bg-[#0b0b0d] w-fit sm:border-l sm:border-r border-[#1b1b1e]">
           <img src="/profile.jpeg" className="rounded-full w-25 sm:w-45" alt="Pray Patel profile picture" />
@@ -101,7 +101,7 @@ export default function Home() {
           </h1>
           <span className="sm:text-xl">&gt; </span>
           <TextType
-            text={["Hey Pray here..!", "Backend Engineer", "Work in progress..."]}
+            text={["Hey Pray here..!", "MERN Developer", "Work in progress..."]}
             className="sm:text-xl"
             typingSpeed={150}
             pauseDuration={1500}
@@ -114,40 +114,40 @@ export default function Home() {
 
       {/* Separator */}
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="hidden sm:block w-2/5 border-l border-r border-[#1b1b1e] h-10"></div>
+        <div className="hidden sm:block w-200 border-l border-r border-[#1b1b1e] h-10"></div>
         <div className="sm:hidden h-10 w-full"></div>
       </div>
 
       {/* About Me */}
-      <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
+      <div className="w-full px-5  sm:w-200 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
         <h1 className="text-3xl py-5">About me</h1>
       </div>
-      <div className="w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:border-l sm:border-r border-[#1b1b1e]">
+      <div className="w-full border-t    border-b border-[#1b1b1e] flex justify-center items-center">
+        <div className="w-full px-5  sm:w-200 sm:border-l sm:border-r border-[#1b1b1e]">
           <p className="py-5">
             Hey there, I&apos;m <span className="font-semibold">Pray Patel</span>.  
-            With a strong interest in <span className="text-[#00FF88]">Generative AI</span> and <span className="text-[#00FF88]">Edge AI</span>, I enjoy learning new skills, tackling challenges, and finding creative solutions to problems.
+            With a strong interest in <span className="text-[#00FF88]">Developing something</span>, I enjoy learning new skills, tackling challenges, and finding creative solutions to problems.
           </p>
           <p>
             I&apos;m currently pursuing my <span className="font-medium">B.Tech in CSE</span> at <span className="font-medium">GEC Patan</span> (2nd year).  
-            Actively attending and organizing tech events/workshops on campus, I&apos;m highly motivated to engage in and contribute to tech communities.
+            I am Campus Orgeniser of <span className="text-[#00FF88]">GDGoC</span> at Gec patan. Actively attending and organizing tech events/workshops on campus, I&apos;m highly motivated to engage in and contribute to tech communities.
           </p>
         </div>
       </div>
 
       {/* Separator */}
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="hidden sm:block w-2/5 border-l border-r border-[#1b1b1e] h-10"></div>
+        <div className="hidden sm:block w-200 border-l border-r border-[#1b1b1e] h-10"></div>
         <div className="sm:hidden h-10 w-full"></div>
       </div>
 
       {/* Projects */}
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e]"></div>
-      <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
-        <h1 className="text-3xl py-5">Projects</h1>
+      <div className="w-full px-5  sm:w-200 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
+        <h1 className="text-3xl py-5">Side Projects...</h1>
       </div>
       <div className="w-full border-t border-b border-[#1b1b1e] flex justify-center relative">
-        <div className="mx-5 sm:mx-0 w-full sm:w-2/5 border-l border-r border-[#1b1b1e] px-5 py-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="mx-5 sm:mx-0 w-full sm:w-200 border-l border-r border-[#1b1b1e] px-5 py-5 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {projects.map((p, i) => (
             <div
               key={i}
@@ -198,20 +198,19 @@ export default function Home() {
 
       {/* Tech Stack */}
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="hidden sm:block w-2/5 border-l border-r border-[#1b1b1e] h-10"></div>
+        <div className="hidden sm:block w-200 border-l border-r border-[#1b1b1e] h-10"></div>
         <div className="sm:hidden h-10 w-full"></div>
       </div>
-      <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
+      <div className="w-full px-5  sm:w-200 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
         <h1 className="text-3xl py-5">Tech Stack</h1>
       </div>
       <div className="w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:border-l sm:border-r border-[#1b1b1e]">
+        <div className="w-full px-5  sm:w-200 sm:border-l sm:border-r border-[#1b1b1e]">
           {/* Frontend */}
           <div className="flex py-5">
             <h1 className="text-xl w-30 sm:w-40 py-2">Frontend</h1>
             <div className="flex gap-5 sm:gap-10 flex-wrap">
-              <TechIcon src="/stack/react.svg" label="React" />
-              <TechIcon src="/stack/motion.svg" label="Framer Motion" />
+              <TechIcon src="/stack/react.svg" label="React" /> 
               <TechIcon src="/stack/tailwindcss.svg" label="Tailwind CSS" />
               <TechIcon src="/stack/nextjs2-dark.svg" label="Next.js" />
             </div>
@@ -222,8 +221,7 @@ export default function Home() {
             <h1 className="text-xl w-30 sm:w-40 py-2">Backend</h1>
             <div className="flex gap-5 sm:gap-10 flex-wrap">
               <TechIcon src="/stack/nodejs.svg" label="Node.js" />
-              <TechIcon src="/stack/graphql.svg" label="GraphQL" />
-              <TechIcon src="/stack/Express.svg" label="Express.js" />
+              <TechIcon src="/stack/express.svg" label="express.js" />
             </div>
           </div>
           {/* Database */}
@@ -240,17 +238,17 @@ export default function Home() {
 
       {/* Separator */}
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="hidden sm:block w-2/5 border-l border-r border-[#1b1b1e] h-10"></div>
+        <div className="hidden sm:block w-200 border-l border-r border-[#1b1b1e] h-10"></div>
         <div className="sm:hidden h-10 w-full"></div>
       </div>
 
       {/* Social Links */}
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e]"></div>
-      <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
+      <div className="w-full px-5  sm:w-200 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
         <h1 className="text-3xl py-5">Find me here...</h1>
       </div>
       <div className="lines_pattern border-t border-b border-[#1b1b1e]"></div>
-      <div className="mx-5 sm:mx-0 w-full sm:w-2/5 border-r border-l border-[#1b1b1e] self-center">
+      <div className="mx-5 sm:mx-0 w-full sm:w-200 border-r border-l border-[#1b1b1e] self-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-[#1b1b1e]">
           {socials.map((s, i) => (
             <a
@@ -276,11 +274,11 @@ export default function Home() {
       </div>
 
       <div className="lines_pattern w-full border-t border-b border-[#1b1b1e] flex justify-center items-center">
-        <div className="hidden sm:block w-2/5 border-l border-r border-[#1b1b1e] h-10"></div>
+        <div className="hidden sm:block w-200 border-l border-r border-[#1b1b1e] h-10"></div>
         <div className="sm:hidden h-10 w-full"></div>
       </div>
 
-      <div className="w-full px-5 sm:px-0 sm:w-2/5 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
+      <div className="w-full px-5  sm:w-200 sm:mx-auto sm:border-l sm:border-r border-[#1b1b1e]">
         <h1 className="text-3xl py-20"></h1>
       </div>
     </div>
