@@ -8,8 +8,10 @@ export function Timeline() {
         {timeline.map((t, i) => (
           <div key={i}>
             <div className="timeline-entry">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={t.logo}
+                alt={`${t.role} at ${t.org} logo`}
                 className="w-18 flex self-center justify-self-center"
               />
 
@@ -26,7 +28,7 @@ export function Timeline() {
         ))}
       </div>
       <p className="cmt" style={{ fontSize: "0.84rem", marginTop: "50px" }}>
-        // more of this to come. still early. no regrets (mostly).
+        {"// "}more of this to come. still early. no regrets (mostly).
       </p>
     </Section>
   );

@@ -12,7 +12,6 @@ type DayItem = {
 export function GithubSection() {
   const [hoveredCell, setHoveredCell] = useState<{ date: string; level: number } | null>(null);
   const [apiData, setApiData] = useState<{ total: string; days: DayItem[] } | null>(null);
-  const [loading, setLoading] = useState(true);
 
   // Dynamically fetch live data from /api/github route on component mount
   useEffect(() => {
@@ -26,8 +25,6 @@ export function GithubSection() {
         }
       } catch (err) {
         console.warn("Failed to fetch live API data, using cached dataset:", err);
-      } finally {
-        setLoading(false);
       }
     }
 
@@ -56,7 +53,7 @@ export function GithubSection() {
     const months: { name: string; weekIdx: number }[] = [];
     let lastMonth = -1;
 
-    let curr = new Date(startDate);
+    const curr = new Date(startDate);
     let weekCounter = 0;
 
     while (curr <= today) {
@@ -156,7 +153,7 @@ export function GithubSection() {
                 Activity level <strong style={{ color: "var(--fg)" }}>{hoveredCell.level}</strong> on {hoveredCell.date}
               </span>
             ) : (
-              <span>// mhm.. dont judge me</span>
+              <span>{"// "}mhm.. dont judge me</span>
             )}
           </div>
 
@@ -173,7 +170,7 @@ export function GithubSection() {
       </div>
 
       <p className="cmt" style={{ fontSize: "0.84rem", marginTop: "18px" }}>
-        // It&apos;s my own project... Don&apos;t think I&apos;m an open-source contributor &gt;_&lt;
+        {"// "}It&apos;s my own project... Don&apos;t think I&apos;m an open-source contributor &gt;_&lt;
       </p>
     </Section>
   );

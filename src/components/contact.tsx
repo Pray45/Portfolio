@@ -22,8 +22,8 @@ export function Contact() {
         <span style={{ color: "var(--amber)" }}>Let&rsquo;s talk.</span>
       </h2>
       <p className="cmt" style={{ fontSize: "0.88rem", marginBottom: "28px" }}>
-        // available for internships, roles, freelance, and interesting problems.<br />
-        // especially if it involves infrastructure, systems, or developer tooling.
+        {"// "}available for internships, roles, freelance, and interesting problems.<br />
+        {"// "}especially if it involves infrastructure, systems, or developer tooling.
       </p>
       <div className="cta">
         <button

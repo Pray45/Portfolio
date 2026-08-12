@@ -15,7 +15,7 @@ export function Currently() {
         </tbody>
       </table>
       <p className="vcap cmt" style={{ fontSize: "0.86rem" }}>
-        // last updated: 2026. subject to change without a deprecation notice.
+        {"// "}last updated: 2026. subject to change without a deprecation notice.
       </p>
     </Section>
   );

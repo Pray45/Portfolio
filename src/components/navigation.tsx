@@ -66,13 +66,15 @@ export function Navigation({ onOpenPalette }: { onOpenPalette: () => void }) {
         <span className="chrome-file">{identity.handle} — portfolio.md</span>
 
         {/* desktop nav links */}
-        <ul className="chrome-nav">
-          {nav.map((item) => (
-            <li key={item.href}>
-              <a href={item.href}>{item.label}</a>
-            </li>
-          ))}
-        </ul>
+        <nav className="chrome-nav-wrap" aria-label="Main Navigation">
+          <ul className="chrome-nav">
+            {nav.map((item) => (
+              <li key={item.href}>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         {/* command palette shortcut */}
         <button className="cmdbtn" onClick={onOpenPalette} aria-label="Open command palette (Ctrl+K)">
@@ -161,7 +163,7 @@ export function Navigation({ onOpenPalette }: { onOpenPalette: () => void }) {
             </li>
           </ul>
           <p style={{ color: "var(--dim)", fontSize: "0.75rem", marginTop: "32px" }}>
-            // themes available in the themes section ↓
+            {"// "}themes available in the themes section ↓
           </p>
         </div>
       )}

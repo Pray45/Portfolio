@@ -38,7 +38,10 @@ export function IntroAnimation({ onDone }: IntroProps) {
     if (!cmdDone) return;
 
     // Stage 2: After 'whoami' finishes typing, start typing/scrambling name 'Pray Patel'
-    setStatusText("// executing request...");
+    const timeout0 = setTimeout(() => {
+      setStatusText("// executing request...");
+    }, 0);
+
     const timeout1 = setTimeout(() => {
       setNamePhase("scrambling");
       setStatusText("// decrypting identity...");
@@ -77,7 +80,10 @@ export function IntroAnimation({ onDone }: IntroProps) {
       }, 35);
     }, 350);
 
-    return () => clearTimeout(timeout1);
+    return () => {
+      clearTimeout(timeout0);
+      clearTimeout(timeout1);
+    };
   }, [cmdDone, onDone]);
 
   return (

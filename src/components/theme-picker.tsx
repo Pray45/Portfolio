@@ -54,9 +54,9 @@ export function ThemePicker() {
           className="cmt"
           style={{ fontSize: "0.86rem", marginBottom: "24px" }}
         >
-          // five themes. all dark. light mode is not a feature.
+          {"// "}five themes. all dark. light mode is not a feature.
           <br />
-          // the nav button also cycles through them on each click.
+          {"// "}the nav button also cycles through them on each click.
         </p>
         <div className="levels">
           {THEMES.map((t) => (

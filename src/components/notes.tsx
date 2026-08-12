@@ -14,9 +14,9 @@ export function Notes() {
         ))}
       </ul>
       <p className="cmt" style={{ fontSize: "0.84rem", marginTop: "18px" }}>
-        // drafts exist. publishing is a skill i&apos;m still shipping.
+        {"// "}drafts exist. publishing is a skill i&apos;m still shipping.
         <br />
-        // they&apos;re done when they&apos;re done. which is never.
+        {"// "}they&apos;re done when they&apos;re done. which is never.
       </p>
     </Section>
   );

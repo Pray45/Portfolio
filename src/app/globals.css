@@ -118,6 +118,7 @@ a:hover { border-color: var(--amber); }
 .dots i:nth-child(2) { background: var(--amber); }
 .dots i:nth-child(3) { background: var(--grn); }
 .chrome-file { color: var(--dim); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chrome-nav-wrap { display: flex; align-items: center; }
 .chrome-nav { display: flex; align-items: center; gap: 14px; list-style: none; margin: 0; padding: 0; flex-shrink: 0; }
 .chrome-nav a { color: var(--dim); border-bottom: none; font-size: 12px; transition: color .12s; }
 .chrome-nav a:hover { color: var(--fg); }
@@ -144,6 +145,7 @@ a:hover { border-color: var(--amber); }
 /* hide desktop nav + cmd on small screens, show hamburger */
 @media (max-width: 640px) {
   .chrome-file { display: none; }
+  .chrome-nav-wrap { display: none; }
   .chrome-nav { display: none; }
   .themebtn { font-size: 10px; padding: 2px 7px; }
   .cmdbtn { display: none; }

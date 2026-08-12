@@ -31,9 +31,12 @@ export function CommandPalette({ open, setOpen }: CommandPaletteProps) {
 
   useEffect(() => {
     if (open) {
-      setQuery("");
-      setFocused(0);
-      setTimeout(() => inputRef.current?.focus(), 30);
+      const timer = setTimeout(() => {
+        setQuery("");
+        setFocused(0);
+        inputRef.current?.focus();
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [open]);
 
@@ -76,7 +79,7 @@ export function CommandPalette({ open, setOpen }: CommandPaletteProps) {
         <ul className="palette-list">
           {filtered.length === 0 ? (
             <li className="palette-empty">
-              <span className="cmt">// no commands match &ldquo;{query}&rdquo;</span>
+              <span className="cmt">{"// "}no commands match &ldquo;{query}&rdquo;</span>
             </li>
           ) : (
             filtered.map((item, i) => (

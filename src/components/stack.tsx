@@ -17,7 +17,7 @@ export function Stack() {
         ))}
       </div>
       <p className="cmt" style={{ fontSize: "0.84rem", marginTop: "24px" }}>
-        // not a collector. these are things i&apos;ve actually shipped with.
+        {"// "}not a collector. these are things i&apos;ve actually shipped with.
       </p>
     </Section>
   );

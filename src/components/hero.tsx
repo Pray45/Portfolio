@@ -82,12 +82,12 @@ export function Hero() {
             <img
               ref={imgRef}
               src="/me.png"
-              alt="a deadpan developer. click them."
+              alt="Pray Patel — Computer Science Engineer and Software Developer avatar"
               className="hero-avatar"
               onClick={showJoke}
               role="button"
               tabIndex={0}
-              aria-label="Click for a dev joke"
+              aria-label="Pray Patel avatar — Click for a developer joke"
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") showJoke();
               }}
@@ -111,7 +111,7 @@ export function Hero() {
 
               {/* bio */}
               <p className="hero-sub">
-                <span className="cmt">// </span>
+                <span className="cmt">{"// "}</span>
                 building things that actually have to run in production. infra
                 tooling, full-stack products, developer systems. GDG Campus
                 Lead. picks projects slightly too ambitious — figures out the
@@ -143,7 +143,7 @@ export function Hero() {
                 </a>
               </div>
 
-              <a href="#contact" id="hero-view-work">
+              <a href="#contact" id="hero-hire-me">
                 work with me / <span>hire me</span>
               </a>
             </div>
